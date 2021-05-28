@@ -59,8 +59,8 @@
         <!--Герой-->
         <section class="hero">
             <div class="container">
-            <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="modal-btn" type="button">Заказать услугу</button>
+                <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
+                <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         
@@ -124,11 +124,27 @@
             <div class="container">
             <h2 class="work-title">Чем мы занимаемся</h2>
             <ul class="work-list list">
-                <li class="item"><img class="item-img" src="./images/action1.jpg" alt="руки человека пишут код на квавиатури" width="370"
-                        height="294"></li>
-                <li class="item"><img class="item-img" src="./images/action2.jpg" alt="рука женщины держит телефон" width="370" height="294"></li>
+                <li class="item">
+                    <img class="item-img" src="./images/action1.jpg" alt="руки человека пишут код на квавиатури" width="370"
+                        height="294">
+                       
+                        <div class="work-card-text">
+                        <p class="work-text">Десктопные приложения</p>
+                        </div>
+                    </li>
+                <li class="item">
+                    <img class="item-img" src="./images/action2.jpg" alt="рука женщины держит телефон" width="370" height="294">
+                <div class="work-card-text">
+                    <p class="work-text">Мобильные приложения</p>
+                </div>
+                </li>
                 <li class="item"><img class="item-img" src="./images/action3.jpg" alt="женщина держит планшет и выбирает цвет на планшете" width="370"
-                        height="294"></li>
+                        height="294">
+                    
+                    <div class="work-card-text">
+                        <p class="work-text">Дизайнерские решения</p>
+                    </div>
+                </li>
             </ul>
         </div>
         </section>
@@ -401,6 +417,18 @@
     </div>
     </div>
     </footer>
+    <!--Модально Окно-->
+    <div class="backdrop"data-modal>
+        <div class="modal">
+            <button type="bytton" class="modal-close-btn"data-modal-close>
+                <svg class="modal-close-icon">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 
 </body>
 
